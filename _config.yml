@@ -11,7 +11,7 @@ city: Seoul
 state: 
 zip_code: 
 country: Repulic of Korea
-phone: (716) 555-5555
+phone: 
 
 # homepage tiles
 tiles-source: posts # accepts "posts" or "pages"
