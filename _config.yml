@@ -1,8 +1,8 @@
 # site settings
 title: sikusiku
-subtitle: by HTML5 UP
+subtitle: Full stack developer wannabe!
 email: sikuism@gmail.com
-description: Full stack developer wannabe!
+description: 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 author: JINOOK HONG
