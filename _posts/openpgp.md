@@ -25,3 +25,8 @@ Cryptography는 데이터를 보호하는 학문인 것에 비해, Cryptanalysis
 Cryptanalysist들을 Attacker라 부르기도 한다.
 Cryptonology는 Cryptography와 Cryptanalysis를 모두 포함한다.
 
+## Strong Cryptography
+> Cryptography는 이 세상에 두 종류가 존재한다 : 어린 여동생으로부터 당신의 파일을 읽는 것을 멈추게 하거나,
+> 거대한 정부가 당신의 파일을 읽는 것을 멈추게 하는 것. 이 책은 후자에 대한 것이다.
+> <BR /> --Bruce Schneier, Applied Cryptography: Protocols, Algorithms, and Source Code in C.
+
