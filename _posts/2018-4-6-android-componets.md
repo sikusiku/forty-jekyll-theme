@@ -28,19 +28,19 @@
   * /system/core 에 위치.
   * 커널을 래핑하거나 추가 기능을 제공하는 역할
   * Library
-    * 주로 Native library를 말하며 세 가지 범주로 구분.
-      * Bionic : Android custom C library. (libc)
-      * Webkit/SQLite/OpenGL 같은 기능 라이브러리
-      * Native System Service인 Surface Manager(/system/bin/surfaceflinger), Media Framework(/system/bin/mediaserver)
+   * 주로 Native library를 말하며 세 가지 범주로 구분.
+    * Bionic : Android custom C library. (libc)
+    * Webkit/SQLite/OpenGL 같은 기능 라이브러리
+    * Native System Service인 Surface Manager(/system/bin/surfaceflinger), Media Framework(/system/bin/mediaserver)
   * Linux Kernel : Android의 Kernel은 리눅스 Kernel을 기반으로 불필요한 것을 제거하고 기능을 확장(Binder, Ashmene, LMK 등)한 것.
   * Binder IPC
-    * Process 간 통신에 사용.
-    * Binder IPC : Binder IPC의 하부 매커니즘
-    * Binder RPC : Binder IPC의 용도(remote call)
-    * Android component 중 Service와 Content Provider는 Binder를 통해 다른 프로세스에 접근 가능.
+   * Process 간 통신에 사용.
+   * Binder IPC : Binder IPC의 하부 매커니즘
+   * Binder RPC : Binder IPC의 용도(remote call)
+   * Android component 중 Service와 Content Provider는 Binder를 통해 다른 프로세스에 접근 가능.
   * Binder Thread
-    * App. 프로세스에는 Binder Thread 라는 native thread pool이 있고 최대 16개 까지 생성 가능.
-    * 다른 프로세스에서 Binder를 통해 접근할 때 이 thread pool을 통해 접근.
+   * App. 프로세스에는 Binder Thread 라는 native thread pool이 있고 최대 16개 까지 생성 가능.
+   * 다른 프로세스에서 Binder를 통해 접근할 때 이 thread pool을 통해 접근.
 ## Android source tree
 * frameworks : Android framework. android. 으로 시작하는 자바 패키지 포함.
 * libcore : 자바 코어 패키지 포함.
