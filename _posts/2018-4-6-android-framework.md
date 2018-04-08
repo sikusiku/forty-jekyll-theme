@@ -1,9 +1,12 @@
 # Android Framework
+
 ## Android architecture
 ![Android Framework](http://3.bp.blogspot.com/_wK8UgW3iEtU/TGPkS44q8LI/AAAAAAAADgc/x6EBEn2sl3c/s1600/Android+Architecture+-+1.png)
+
 ### Applications
 * Pre-load App. 이나 일반 App. 이나 동일하게 안드로이드 어플리케이션 스택에 위치.
 * Pro-load App. 의 경우 system 권한을 가지거나 LMK에 의해 종료 될 때 영향을 주는 process priority를 임의 설정 가능.
+
 ### Application Framework
 * Android OS 위에서 기반이 되는 구조.
 * 앱은 직접 자신의 생명 주기를 관리하지 않으며 Application Framework에서 이러한 일들을 관장함.
@@ -21,6 +24,7 @@
   * 여러 Manager 서버는 시스템 서비스 형태로 존재.
   * 앱에서 접근할 때는 Context의 getSystemService(String name) 메서드를 이용.
   * system_server라는 별도 프로세스에서 실행 되므로 앱에서는 시스템 서비스 접근 시 Binder IPC를 이용한 프로세스 간 통신이 필요.
+  
 ### Android Runtime
 * Dalvik VM은 자바/C/C++로 작성 되어 잇으며 L-OS 부터는 ART로 대체.
 * 레지스터 기반의 VM으로 JAVA VM보다 명령이 단순하고 속도가 빠름.
@@ -41,6 +45,7 @@
   * Binder Thread
     * App. 프로세스에는 Binder Thread 라는 native thread pool이 있고 최대 16개 까지 생성 가능.
     * 다른 프로세스에서 Binder를 통해 접근할 때 이 thread pool을 통해 접근.
+    
 ## Android source tree
 * frameworks : Android framework. android. 으로 시작하는 자바 패키지 포함.
 * libcore : 자바 코어 패키지 포함.
